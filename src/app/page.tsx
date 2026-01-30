@@ -1,5 +1,5 @@
 import { Header } from "@/componebts/layout/header";
-import Head from "next/head";
+
 
 export default async function Page() {
   return (

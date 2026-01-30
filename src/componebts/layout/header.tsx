@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export const Header = () => {
@@ -9,8 +10,8 @@ export const Header = () => {
         <div className="text-2xl font-bold">Sdlima Pizza</div>
       </Link>
       <div className="flex gap-2">
-        <button>Login/cadastro</button>
-        <button>Carrinho</button>
+        <Button>Login/cadastro</Button>
+        <Button>Carrinho</Button>
       </div>
     </header>
   );
