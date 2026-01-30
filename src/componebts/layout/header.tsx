@@ -10,8 +10,10 @@ export const Header = () => {
         <div className="text-2xl font-bold">Sdlima Pizza</div>
       </Link>
       <div className="flex gap-2">
+
         <Button>Login/cadastro</Button>
         <Button>Carrinho</Button>
+        
       </div>
     </header>
   );
