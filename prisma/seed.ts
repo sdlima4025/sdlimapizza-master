@@ -7,7 +7,7 @@ async function main() {
         {
             id: 1,
             name: 'Calabresa com Cebola',
-            price: 42.9,
+            price: 42.0,
             image: 'calabresa.jpg',
             ingredients: 'Calabresa, cebola, mussarela, molho de tomate'
         },
