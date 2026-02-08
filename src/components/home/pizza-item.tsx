@@ -5,15 +5,24 @@ import { Product } from "@/generated/prisma/client";
 
 import { Button } from "../ui/button";
 import { decimalToMoney } from "@/lib/utils";
+import { useCart } from "@/stores/cart";
 
 type Props = {
   data: Product;
 };
 
 export const PizzaItem = ({ data }: Props) => {
+  const cart = useCart();
+
   const handleAddToCart = () => {
     // Lógica para adicionar ao carrinho
+    cart.addItem({
+      ProductId: data.id,
+      quantity: 1,
+    });
+    cart.setOpen(true);
   };
+  
   return (
     <div className="text-sm bg-secondary p-4 rounded-md">
       <Image
