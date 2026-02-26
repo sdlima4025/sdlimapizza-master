@@ -19,6 +19,8 @@ export const CartProduct = ({ data }: props) => {
     let product = products.products.find(item => item.id === data.ProductId);
     if(!product) return null;
 
+    
+
 
 
     const handleMinusClick = () => {
